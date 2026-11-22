@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Masarrah | Ton avis</title>
+<meta name="description" content="Note ton sac Masarrah en un clic.">
+<meta name="theme-color" content="#FBE8EF">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --burgundy:#800020; --burgundy-dark:#5e0018; --blush:#FBE8EF; --blush-deep:#F6CFDA; --card:#fff; --text:#2A1A1F; --muted:#7A6268; --star:#C9A227; --line:#F3E6EA; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--blush); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+  body { min-height: 100svh; display: flex; justify-content: center; padding: env(safe-area-inset-top) 16px calc(24px + env(safe-area-inset-bottom)); }
+  main { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .logo { width: 96px; height: 96px; margin: 12px 0 0; object-fit: cover; }
+  h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; color: var(--burgundy); font-size: 32px; line-height: 1.1; margin: 4px 0 6px; }
+  .lead { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0 0 18px; max-width: 330px; }
+  .card { width: 100%; background: var(--card); border-radius: 24px; padding: 20px; box-shadow: 0 10px 30px rgba(128,0,32,.08); text-align: left; }
+  .prod { display: flex; gap: 14px; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+  .prod img { width: 72px; height: 72px; border-radius: 16px; object-fit: cover; background: var(--blush); flex: none; }
+  .prod b { font-size: 17px; font-weight: 600; display: block; }
+  .prod span { font-size: 13px; color: var(--muted); }
+  .label { font-size: 13px; font-weight: 600; color: var(--muted); margin: 0 0 8px; text-transform: uppercase; letter-spacing: .04em; }
+  .stars { display: flex; justify-content: space-between; margin: 0 0 6px; }
+  .stars button { appearance: none; border: 0; background: none; padding: 4px; cursor: pointer; width: 20%; display: grid; place-items: center; }
+  .stars svg { width: 44px; height: 44px; fill: #EADDE1; transition: transform .12s ease, fill .15s ease; }
+  .stars button.on svg { fill: var(--star); }
+  .stars button:active svg { transform: scale(.9); }
+  .hint { min-height: 20px; text-align: center; font-size: 14px; color: var(--burgundy); font-weight: 500; margin-bottom: 14px; }
+  input, textarea { width: 100%; font: 400 16px/1.4 Inter, system-ui, sans-serif; color: var(--text); border: 1.5px solid var(--line); border-radius: 14px; padding: 12px 14px; background: #fff; outline: none; }
+  input:focus, textarea:focus { border-color: var(--burgundy); }
+  textarea { min-height: 96px; resize: vertical; margin-top: 10px; }
+  .count { text-align: right; font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .btn { appearance: none; border: 0; width: 100%; min-height: 56px; border-radius: 999px; font: 600 16px/1 Inter, system-ui, sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; margin-top: 16px; background: var(--burgundy); color: #fff; transition: transform .12s ease, opacity .2s ease; }
+  .btn:active { transform: scale(.98); }
+  .btn[disabled] { opacity: .4; cursor: default; }
+  .note { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 12px 2px 0; text-align: center; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .grid a { display: block; text-decoration: none; color: var(--text); background: #fff; border-radius: 18px; padding: 10px; box-shadow: 0 6px 18px rgba(128,0,32,.06); font-size: 14px; font-weight: 500; text-align: center; }
+  .grid img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; background: var(--blush); margin-bottom: 6px; }
+  .done { text-align: center; padding: 8px 4px; }
+  .done h2 { font-family: "Cormorant Garamond", Georgia, serif; color: var(--burgundy); font-size: 28px; margin: 6px 0; }
+  .done p { color: var(--muted); line-height: 1.5; margin: 6px 0; }
+  footer { margin-top: auto; padding-top: 24px; font-size: 13px; color: var(--muted); }
+  footer a { color: var(--burgundy); text-decoration: none; font-weight: 500; }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="../logo.webp" alt="Masarrah" width="96" height="96">
+  <h1 id="title">Ton avis compte</h1>
+  <p class="lead" id="lead">Une note, un petit mot : ça aide les autres filles à choisir.</p>
+
+  <section class="card" id="form" hidden>
+    <div class="prod"><img id="pimg" alt=""><div><b id="pname"></b><span>Ton sac Masarrah</span></div></div>
+    <p class="label">Ta note</p>
+    <div class="stars" id="stars" role="radiogroup" aria-label="Ta note sur 5"></div>
+    <div class="hint" id="hint" aria-live="polite"></div>
+    <p class="label">Ton prénom</p>
+    <input id="name" maxlength="30" autocomplete="given-name" placeholder="Ex. Amira">
+    <textarea id="comment" maxlength="300" placeholder="Qu'est-ce que tu as aimé ? (facultatif)"></textarea>
+    <div class="count" id="count">0 / 300</div>
+    <button class="btn" id="send" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+      Envoyer mon avis
+    </button>
+    <p class="note">Ton téléphone ouvre un SMS déjà écrit vers Masarrah : appuie sur « Envoyer ». Seuls ton prénom, ta note et ton mot apparaîtront sur la page du sac.</p>
+  </section>
+
+  <section class="card" id="pick" hidden>
+    <p class="label" style="text-align:center">Quel sac as-tu reçu ?</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="card done" id="done" hidden>
+    <h2>Merci !</h2>
+    <p>Envoie le SMS qui vient de s'ouvrir, et ton avis arrive chez nous.</p>
+    <p>Tu veux aussi montrer ton sac ? <a href="../" style="color:var(--burgundy);font-weight:600">Partage-le en story</a></p>
+  </section>
+
+  <footer>Masarrah · <a href="https://masarrah.shop">masarrah.shop</a></footer>
+</main>
+
+<script>
+  var LABELS = ['', 'Déçue', 'Bof', 'Bien', 'Très bien', 'Je l’adore'];
+  var data = null, key = (location.search.replace(/^\?/, '').split(/[&=]/)[0] || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  var rating = 0;
+  var ua = navigator.userAgent || '', isIOS = /iPhone|iPad|iPod/i.test(ua);
+  var $ = function (id) { return document.getElementById(id); };
+
+  var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg>';
+  for (var i = 1; i <= 5; i++) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.setAttribute('role', 'radio'); b.setAttribute('aria-label', i + ' sur 5 : ' + LABELS[i]);
+    b.dataset.v = i; b.innerHTML = STAR;
+    b.addEventListener('click', function () { setRating(+this.dataset.v); });
+    $('stars').appendChild(b);
+  }
+  function setRating(v) {
+    rating = v;
+    [].forEach.call($('stars').children, function (b) { var on = +b.dataset.v <= v; b.classList.toggle('on', on); b.setAttribute('aria-checked', +b.dataset.v === v); });
+    $('hint').textContent = LABELS[v];
+    $('send').disabled = false;
+  }
+  $('comment').addEventListener('input', function () { $('count').textContent = this.value.length + ' / 300'; });
+
+  // "|" separates the fields of the SMS; never let the client type one.
+  function clean(s) { return (s || '').replace(/[|\r\n]+/g, ' ').replace(/\s{2,}/g, ' ').trim(); }
+
+  $('send').addEventListener('click', function () {
+    if (!rating || !data) return;
+    var body = 'AVIS ' + key + ' ' + rating + ' | ' + clean($('name').value) + ' | ' + clean($('comment').value);
+    var to = data.to || '';
+    var url = 'sms:' + to + (isIOS ? '&' : '?') + 'body=' + encodeURIComponent(body);
+    $('form').hidden = true; $('done').hidden = false; $('title').textContent = 'Presque fini'; $('lead').hidden = true;
+    location.href = url;
+  });
+
+  function showProduct(p) {
+    $('pimg').src = p.img || '../logo.webp'; $('pimg').alt = p.name; $('pname').textContent = p.name;
+    $('form').hidden = false;
+  }
+  function showPicker() {
+    var seen = {};
+    Object.keys(data.products).forEach(function (k) {
+      var p = data.products[k];
+      if (p.gone || seen[p.name]) return; seen[p.name] = 1;
+      var a = document.createElement('a'); a.href = '?' + k;
+      a.innerHTML = '<img loading="lazy" alt="">' + '<span></span>';
+      a.querySelector('img').src = p.img || '../logo.webp'; a.querySelector('span').textContent = p.name;
+      $('grid').appendChild(a);
+    });
+    $('pick').hidden = false;
+  }
+
+  fetch('p.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (j) {
+    data = j;
+    var p = key && j.products[key];
+    if (p && !p.gone) showProduct(p); else showPicker();
+  }).catch(function () {
+    $('lead').textContent = 'Page indisponible pour le moment. Réessaie dans un instant.';
+  });
+</script>
+</body>
+</html>

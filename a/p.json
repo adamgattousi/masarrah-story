@@ -1,0 +1,96 @@
+{
+ "to": "+21622049185",
+ "updated": "2026-11-22",
+ "products": {
+  "bd": {
+   "id": "6aff6915c9d9b6453f101cac",
+   "slug": "sac-bowling-damier",
+   "name": "Sac Bowling Damier",
+   "img": "https://cdn.converty.shop/images/496959caf1ea681c1eacff65741fd2df2957ab8f94033295de750937e475a7f8_md.webp"
+  },
+  "cl": {
+   "id": "6aed02b5689d0afedab537ea",
+   "slug": "sac-cabas-lisse",
+   "name": "Sac Cabas Lisse",
+   "img": "https://cdn.converty.shop/images/003255cbc5d682135b67193fcb7df30e1c674589726b2edd67a980b9cd936c22_md.webp"
+  },
+  "v": {
+   "id": "6ae77bed8528cc19a5f3a4c7",
+   "slug": "sac-vanity",
+   "name": "Sac Vanity",
+   "img": "https://cdn.converty.shop/images/77278290a36a7430818e77f2806cc9730a0520346442f019c4650062863ef112_md.webp"
+  },
+  "mdr": {
+   "id": "6ae77b43fa3a79213de59b81",
+   "slug": "mini-sac-double-rabat",
+   "name": "Mini Sac Double Rabat",
+   "img": "https://cdn.converty.shop/images/ef58c03f90985497d3f90824cce3bbd2bea8ddafcfca9049e209c814fc3d6fd2_md.webp"
+  },
+  "pfc": {
+   "id": "6ae75a74b339234028d2954d",
+   "slug": "portefeuille-floral-creme",
+   "name": "Portefeuille Floral Crème",
+   "img": "https://cdn.converty.shop/images/237daf732233e0b0dbe963c3537f486b9999500e91d75a2dc36395740ad9acce_md.webp"
+  },
+  "prb": {
+   "id": "6ae75a3eb339234028d2912a",
+   "slug": "portefeuille-rose-boucle",
+   "name": "Portefeuille Rose Boucle",
+   "img": "https://cdn.converty.shop/images/9660690f2437ecbb92dad961df2221f2773f65cb24639dbf9d9930973bba29af_md.webp"
+  },
+  "mpr": {
+   "id": "6ae759eafa3a79213de3ab01",
+   "slug": "mini-pochette-a-rabat",
+   "name": "Mini Pochette à Rabat",
+   "img": "https://cdn.converty.shop/images/a507d2fb9907cc46c595fbb24b6a2f3b2b222367de6c04a63e3ef1a846272ada_md.webp"
+  },
+  "cs": {
+   "id": "6ae759268528cc19a5f1b3f2",
+   "slug": "sac-cabas-suedine",
+   "name": "Sac Cabas Suédine",
+   "img": "https://cdn.converty.shop/images/cf3d8e1e9e7a8df083c9ca9e16438df8b899d03397cb656d31bfcae5e2b60001_md.webp"
+  },
+  "fe": {
+   "id": "6ae5ca631dcc53c258f0500a",
+   "slug": "sac-a-foulard-elegance",
+   "name": "Sac à Foulard Élégance",
+   "img": "https://cdn.converty.shop/images/b08535cf8603b4f65153399565b6c581f3169ca337f81ba5cfd7ee64469ed833_md.webp"
+  },
+  "gce": {
+   "id": "6adfbf16e30b4d508f6e5088",
+   "slug": "grand-cabas-elegant",
+   "name": "Sac Grand Cabas Élégant",
+   "img": "https://cdn.converty.shop/images/7cea60d77ccb2b83d43e215790571f2964f64439aff19ae9690d0494f0f5ec92_md.webp"
+  },
+  "mc": {
+   "id": "6ade3dbd904a26d90fd4526f",
+   "slug": "sac-mk-classic",
+   "name": "Sac Bowling Damier",
+   "img": "https://cdn.converty.shop/images/7db2cd7b679c069f717fba8c6304648ac1f6e33616071447ed7024f3387a947c_md.webp"
+  },
+  "h": {
+   "id": "6ade3723e50a7d8d8789aa2a",
+   "slug": "sac-hermes",
+   "name": "Sac à Main Ceinturé",
+   "img": "https://cdn.converty.shop/images/ecb484d7a64757d8ef4737da8361c28a1f97ef7f02cccef57320224ea4f0f6cd_md.webp"
+  },
+  "pem": {
+   "id": "6acbfd33df181e608bb2f146",
+   "slug": "sac-polene-elegance-moderne-avec-pochette-zippee-assortie",
+   "name": "Sac Cabas & Pochette Zippée",
+   "img": "https://cdn.converty.shop/images/acc401600397498e0ef5821c013be084a2b0cf77c02554e67090d5f6d744dc85_md.webp"
+  },
+  "m": {
+   "id": "6ac40ac1ba3956071f86bfd2",
+   "slug": "sac-monogramme",
+   "name": "Sac Monogramme",
+   "img": "https://cdn.converty.shop/images/2e451ce43d2de268f9c96b04c30a653332bdf8bf4088bd2193e7fa8f44f963e2_md.webp"
+  },
+  "eu": {
+   "id": "6ac284b083dca3242eb0f186",
+   "slug": "sac-elegance-urbaine",
+   "name": "Sac Élégance Urbaine",
+   "img": "https://cdn.converty.shop/images/207e7cc14d2649817ac46261f999450538a89370a0328df9a5d768d7b8c1f721_md.webp"
+  }
+ }
+}
