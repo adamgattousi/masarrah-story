@@ -1,5 +1,14 @@
 {
- "form": null,
+ "form": {
+  "action": "https://docs.google.com/forms/d/e/1FAIpQLSfOqLn0hCaiegBwtqPSlzwsu6PVe9TX-z2FyJzGRWgKO7lIFA/formResponse",
+  "fields": {
+   "t": "entry.684491482",
+   "r": "entry.2015766329",
+   "n": "entry.392146919",
+   "c": "entry.1419476438"
+  },
+  "csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRuZjpdNXOAr7VTL_Vy_1sA1KXjxKNDDpT3sdmRWY8vqEtUiMHYh8pnQPZQ6r-j0ECauTddIJOnmOiQ/pub?gid=1026285107&single=true&output=csv"
+ },
  "updated": "2026-11-22",
  "products": {
   "bd": {
